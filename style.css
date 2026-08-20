@@ -7,7 +7,7 @@
 body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-image: url("images/Hintergrundwebsite.png");
+    background-image: url("./images/Hintergrundwebsite.png");
     background-size: cover;
     /* Bild füllt den ganzen Bildschirm */
     background-position: center;
@@ -20,34 +20,44 @@ body {
 header {
     font-size: 30px;
     text-align: center;
-    margin-bottom: 150px;
+    margin-bottom: 30px;
     padding: 20px;
-    background: #000000;
+    background: rgba(0,0,0,0.6);
     color: rgb(10, 18, 91);
     /*oberer teil der anordnung*/
 }
 
+.header-slideshow {
+    width: 100%;
+    max-height: 420px;
+    overflow: hidden;
+    position: relative;
+}
 
-/*übershrift*/
+.header-slideshow img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.8s ease-in-out;
+}
 
-header h1 {
-    color: rgb(10, 18, 91);
-    font-size: 42px;
-    margin-bottom: 20px;
-    background: #000000;
+.header-slideshow img.active {
+    opacity: 1;
 }
 
 nav ul {
     display: flex;
     justify-content: center;
     list-style: none;
-    gap: 30px;
+    gap: 20px;
     flex-wrap: wrap;
 }
 
 nav a {
     text-decoration: none;
-    color: #374151;
+    color: #f3f4f6;
     font-weight: bold;
     transition: .0s;
 }
@@ -55,18 +65,6 @@ nav a {
 nav a:hover {
     color: #1a3eb5;
 }
-
-
-/*
-main {
-    max-width: 900px;
-    margin: 50px auto;
-    background: white;
-    padding: 20px;
-    border-radius: 20px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, .08);
-    text-align: center
-}*/
 
 main h2 {
     color: #000000;
@@ -109,19 +107,12 @@ button {
     transition: .0s;
 }
 
-
-/*button:hover {
-    background: #1d4ed8;
-    transform: translateY(-2px);
-}*/
-
-
 /*der graue balken in dem der name steht */
 
 footer p {
     font-size: 25px;
     text-align: center;
-    margin-top: 500px;
+    margin-top: 50px;
     padding: 20px;
     background: #000000;
     color: rgb(10, 18, 91);
