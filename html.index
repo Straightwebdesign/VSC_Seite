@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="de">
+ 
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Saschi</title>
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+ 
+<body>
+   <header>
+       <h1>Hey, ich bin Sascha</h1>
+    
+       <nav>
+           <ul>
+               <li><a href="#" onclick="showLocalImage/home/sascha/Bilder/Bildschirmfotos/tanzbild.png"></a></li>
+               <li><a href="#" onclick="loadCategory('Bildschirmfotos')">abc</a></li>
+               <li><a href="#" onclick="loadCategory('Bildschirmfotos')">abc</a></li>
+               <li><a href="#" onclick="loadCategory('Bildschirmfotos')" >abc</a></li>
+ 
+               <li><a href="#kontakt">straightnorth.sl ät gmail.com</a></li>
+           </ul>
+       </nav>
+   </header>
+   <i id="openHomepage" class="fas fa-link" style="cursor: pointer; font-size: 24px;">Sascha</i>
+ 
+   <div id="content"></div>
+ 
+   <main id=" content ">
+       <p>Wähle oben eine Kategorie aus, um unsere kompetenzen zu sehen.</p>
+   </main>
+ 
+   <footer>
+       <section id="kontakt ">
+           <h2>Kontakt</h2>
+           <form id="kontaktForm ">
+               <input type="text " name="name " placeholder="Dein Name " required>
+               <input type="email " name="email " placeholder="Deine E-Mail " required>
+               <textarea name="nachricht " placeholder="Deine Nachricht " required></textarea>
+               <button type="submit ">Absenden</button>
+           </form>
+           <p id="status "></p>
+       </section>
+   </footer>
+ 
+   <script src="script.js "></script>
+</body>
+ 
+</html>
+* Allgemein */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f5f5f5;
+    color:#333;
+    line-height:1.6;
+}
+
+/* Header */
+
+header{
+    background:#1f2937;
+    color:white;
+    padding:20px;
+}
+
+header h1{
+    margin-bottom:15px;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+    gap:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+nav a:hover{
+    color:#60a5fa;
+}
+
+/* Inhalt */
+
+main{
+    max-width:1000px;
+    margin:auto;
+    padding:40px;
+}
+
+.hero{
+    text-align:center;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 24px;
+    border:none;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+    border-radius:5px;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* Footer */
+
+footer{
+    margin-top:50px;
+    text-align:center;
+    padding:20px;
+    background:#1f2937;
+    color:white;}
+    const button =
+document.getElementById("btnhallo");
+button.addEventListener("Click"),
+function (){ alert ("Hallo schön dich zu sehen");
+    
+};
